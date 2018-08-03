@@ -22,7 +22,7 @@ pipeline {
     }
     stage('publish') {
       steps {
-        sh "cp dist/rectangle_${env.MAJOR_VERSION}.${env.BUILD_NUMBER}.jar /users/thomas/artifacts/rectangles/"
+        sh "cp dist/rectangle_${env.MAJOR_VERSION}.${env.BUILD_NUMBER}.jar /users/thomas/artifacts/"
       }
     }
     stage("Test on CentOS") {
